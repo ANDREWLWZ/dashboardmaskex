@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <!-- Metadonnees -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="description" content= "Portfolio qui presente mes competences et mes projets. On eput aussi trouver mes coordonnees de contact."/>
+    <meta name="keywords" content="etudiante, informatique, web, developpement, portfolio, competences, projet"/>
+    <meta name="author" content="chaumulon cassandra"/>
+    <link href="CSS/style.css" rel="stylesheet">
+
+    <title>CHAUMULON Cassandra | Portfolio</title>
+</head>
+
+<body>
+    <div class="main-content">
+         <header>
+            <nav id="navbar">
+                <a id="logo" href="index.html">chaumulon.cassandra</a>
+                <!-- hamburger pour la version mobile -->
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+                <ul class="menu">
+                    <li class="menu-link"><a href="about.html">A propos</a></li>
+                    <li class="menu-link"><a href="skills.html">Compétences</a></li>
+                    <li class="menu-link menu-link-active"><a href="projects.html">Projets</a></li>
+                    <li class="menu-link"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div id="projects-content">
+            <h1>Mes projets</h1>
+
+            <div id="projects-slide">
+                <!-- BOUTON "PRECEDENT"-->
+                <a id="prev" onclick="incrementer(-1)">
+                    <img src="IMG/projets/precedent.png" alt="bouton flèche gauche / précédent">
+                </a>
+
+                <div id="projects-images">
+                <!-- IMAGES DES PROJETS -->
+                    <div class="projects-box">
+                        <img class="" src="IMG/projets/projet.png" alt="...">
+                    </div>
+
+                    <div class="projects-box">
+                        <img src="IMG/projets/projet.png" alt="...">
+                    </div>
+
+                    <div class="projects-box">
+                        <img src="IMG/projets/projet.png" alt="...">
+                    </div>
+
+                    <div class="projects-box">
+                        <img src="IMG/projets/projet.png" alt="...">
+                    </div>
+
+                    <div class="projects-box">
+                        <img src="IMG/projets/projet.png" alt="...">
+                    </div>
+
+                    <div class="projects-box">
+                        <img src="IMG/projets/projet.png" alt="...">
+                    </div>
+
+                    <div class="projects-box">
+                        <img src="IMG/projets/projet.png" alt="...">
+                    </div>
+                <!-- FIN IMAGES DES PROJETS -->
+
+                <!-- POINTS EN BAS -->
+                    <div class="projects-dots">
+                        <span class="dot" onclick="positionActuelle(1)"></span>
+                        <span class="dot" onclick="positionActuelle(2)"></span>
+                        <span class="dot" onclick="positionActuelle(3)"></span>
+                        <span class="dot" onclick="positionActuelle(4)"></span>
+                        <span class="dot" onclick="positionActuelle(5)"></span>
+                        <span class="dot" onclick="positionActuelle(6)"></span>
+                        <span class="dot" onclick="positionActuelle(7)"></span>
+                    </div>
+                </div>
+
+                <!-- BOUTON "SUIVANT" -->
+                <a id="next" onclick="incrementer(1)">
+                    <img src="IMG/projets/suivant.png" alt="bouton flèche droite / suivant">
+                </a>
+
+                <!-- DESCRIPTIONS DES PROJETS -->
+                <div class="projects-description">
+                    <h2 class="projects-name">NOM DU PROJET 1</h2>
+                    <h3 class="projects-type">Projet Scolaire</h3>
+                    <p class="projects-informations">In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. </p>
+                    <p class="projects-technologies">Angular | Node.js | Express | MongoDB</p>
+                    <div class="projects-link">
+                        <a href="https://github.com/CassandraCH">Voir le code source</a>
+                    </div>
+                </div>
+
+                <div class="projects-description">
+                    <h2 class="projects-name">NOM DU PROJET 2</h2>
+                    <h3 class="projects-type">Projet Scolaire</h3>
+                    <p class="projects-informations">In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. </p>
+                    <p class="projects-technologies">Angular | Node.js | Express | MongoDB</p>
+                    <div class="projects-link">
+                        <a href="https://github.com/CassandraCH">Voir le code source</a>
+                    </div>
+                </div>
+
+                <div class="projects-description">
+                    <h2 class="projects-name">NOM DU PROJET 3</h2>
+                    <h3 class="projects-type">Projet Scolaire</h3>
+                    <p class="projects-informations">In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. </p>
+                    <p class="projects-technologies">Angular | Node.js | Express | MongoDB</p>
+                    <div class="projects-link">
+                        <a href="https://github.com/CassandraCH">Voir le code source</a>
+                    </div>
+                </div>
+
+                <div class="projects-description">
+                    <h2 class="projects-name">NOM DU PROJET 4</h2>
+                    <h3 class="projects-type">Projet Scolaire</h3>
+                    <p class="projects-informations">In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. </p>
+                    <p class="projects-technologies">Angular | Node.js | Express | MongoDB</p>
+                    <div class="projects-link">
+                        <a href="https://github.com/CassandraCH">Voir le code source</a>
+                    </div>
+                </div>
+
+                <div class="projects-description">
+                    <h2 class="projects-name">NOM DU PROJET 5</h2>
+                    <h3 class="projects-type">Projet Scolaire</h3>
+                    <p class="projects-informations">In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. </p>
+                    <p class="projects-technologies">Angular | Node.js | Express | MongoDB</p>
+                    <div class="projects-link">
+                        <a href="https://github.com/CassandraCH">Voir le code source</a>
+                    </div>
+                </div>
+
+                <div class="projects-description">
+                    <h2 class="projects-name">NOM DU PROJET 6</h2>
+                    <h3 class="projects-type">Projet Scolaire</h3>
+                    <p class="projects-informations">In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. </p>
+                    <p class="projects-technologies">Angular | Node.js | Express | MongoDB</p>
+                    <div class="projects-link">
+                        <a href="https://github.com/CassandraCH">Voir le code source</a>
+                    </div>
+                </div>
+
+                <div class="projects-description">
+                    <h2 class="projects-name">NOM DU PROJET 7</h2>
+                    <h3 class="projects-type">Projet Scolaire</h3>
+                    <p class="projects-informations">In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. </p>
+                    <p class="projects-technologies">Angular | Node.js | Express | MongoDB</p>
+                    <div class="projects-link">
+                        <a href="https://github.com/CassandraCH">Voir le code source</a>
+                    </div>
+                </div>
+                <!-- FIN DESCRIPTIONS DES PROJETS -->
+        </div>
+    </div>
+
+
+
+
+        <footer>
+            <div id="footer-content">
+                <p>Tous droits réservés &copy; 2021</p><p> - CHAUMULON Cassandra</p>
+                <p id="footer-content-logos">
+                    <a href="https://github.com/CassandraCH"><img src="IMG/logos/logo_github_footer.png" alt="logo de github"></a>
+                    <a href="https://www.linkedin.com/in/cassandrachaumulon/"><img src="IMG/logos/logo_linkedin_footer.png" alt="logo de linkedin"></a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="JS/navbar.js"></script>
+    <script src="JS/slide.js"></script>
+</body>
+
+</html>
